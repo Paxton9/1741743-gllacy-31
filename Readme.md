@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Aleksandr Schmidt](https://up.htmlacademy.ru/htmlcss/31/user/1741743).
-* Наставник: [Борис Слонов](https://htmlacademy.ru/profile/slonov_boris).
+* Наставник: [Борис Слонов](https://up.htmlacademy.ru/htmlcss/31/user/1130303).
 
 ---
 
