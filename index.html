@@ -9,9 +9,11 @@
   <title>HTML Academy: Глейси</title>
 </head>
 <body class="page-body">
+  <div class="site-wrapper">
+    <div class="site-container">
   <header class="header">
     <nav class="main-navigation">
-      <a href="#">
+      <a class="header-logo" href="#">
         <img src="img/logo.png" width="154" height="64" alt="Логотип магазина Глейси">
       </a>
       <ul class="site-navigation">
@@ -28,22 +30,20 @@
           </a>
         </div>
         <div class="login-link">
-          <a class="login-icon" href="#">
             <svg width="20" height="19" viewBox="0 0 20 19" fill="white" xmlns="http://www.w3.org/2000/svg">
               <path d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z"/>
               <path d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579 0.585786C3.21071 0.960859 3 1.46957 3 2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z"/>
               </svg>
-          </a>
           <a class="login-item" href="#">Вход</a>
         </div>
         <div class="cart">
-          <a class="cart-icon" href="#">
+
             <svg width="21" height="20" viewBox="0 0 21 20" fill="white" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z"/>
               <path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z"/>
               <path d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z"/>
               </svg>
-          </a>
+
           <a class="cart-text" href="#">Пусто</a>
         </div>
       </div>
@@ -51,35 +51,55 @@
         <p class="text-time">с 10 до 20, ежедневно</p>
         <a class="phone" href="tel:88124502525">8 812 450-25-25</a>
       </div>
-
     </nav>
-  </header>
-  <main class="container">
-    <h1 class="display-none">Магазин "Глейси"</h1>
-    <div class="picture-wrapper">
-      <div class="picture">
-        <p class="subject">Крем-брюле и пломбир с малиновым джемом</p>
-        <button class="btn" type="button">Давайте оба!</button>
-        </div>
+    </header>
+
+  <h1 class="visually-hidden">Магазин "Глейси"</h1>
+    <section class="slider">
+
+      <ul class="slider_list-image">
+        <li class="slider-image"></li>
+        <li class="slider-image"v></li>
+        <li class="slider-image"></li>
+      </ul>
+      <ul class="slider-list">
+        <li class="slider-item slide slide-current">
+          <h3 class="slide-title">
+            Крем-брюле и пломбир с малиновым джемом
+          </h3>
+          <a class="btn slide-button" href="#">
+            Давайте оба!
+          </a>
+        </li>
+        <li class="slider-item slide">
+          <h3 class="slide-title">
+            Шоколадный пломбир и лимонный сорбет
+          </h3>
+          <a class="btn slide-button" href="#">
+            Давайте оба!
+          </a>
+        </li>
+        <li class="slider-item slide">
+          <h3 class="slide-title">
+            Пломбир с помадкой и клубничный щербет
+          </h3>
+          <a class="btn slide-button" href="#">
+            Давайте оба!
+          </a>
+        </li>
+      </ul>
+      <div class="slider-controls">
+        <button class="current" type="button" aria-label="Первый слайд"></button>
+        <button type="button" aria-label="Второй слайд"></button>
+        <button type="button" aria-label="Третий слайд"></button>
       </div>
-
-     <ul class="page-numbers">
-          <li class="numbers-item">
-            <a class="numbers" href="#"><span"></span></a>
-          </li>
-          <li class="numbers-item">
-            <a class="numbers" href="index2.html"><span></span></a>
-          </li>
-          <li class="numbers-item">
-            <a class="numbers" href="index3.html"><span></span></a>
-          </li>
-        </ul>
-
+    </section>
+  <main class="container">
     <div class="feature-container">
       <section class="features-raspberry">
       <h2 class="features-title">Малинка даром!</h2>
       <p class="feature-item">При покупке 2 кг любого фруктового мороженого, <br>добавим в ваш заказ банку малинового варенья бесплатно.</p>
-      <button class="btn" type="button">Хочу варенье!</button>
+      <button class="btn feature-btn" type="button">Хочу варенье!</button>
     </section>
     <section class="features-shoko">
       <h2 class="features-title">Шоколадки даром!</h2>
@@ -89,7 +109,7 @@
     </section>
   </div>
     <section class="product-container">
-      <h2 class="display-none">Список товаров!</h2>
+      <h2 class="visually-hidden">Список товаров!</h2>
       <ul class="product-list">
         <li class="product-item product1">
           <div class="hit">
@@ -143,21 +163,28 @@
           Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
       </p>
         </div>
+        <div class="advantages-item">
 
-      <p class="advantages-item">
-        <img src="img/cow.svg" width="24" height="24" alt="Коровка">
-        Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
-      </p>
-      <p class="advantages-item leaf">
-        <img src="img/leaf.svg" width="16" height="27" alt="Листик">
-        Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, <br>экологически чистого сырья.
-      </p>
-      <p class="advantages-item therm">
-        <img src="img/thermometer.svg" width="16" height="26" alt="Градусник">
-        Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
-      </p>
+            <img src="img/cow.svg" width="24" height="24" alt="Коровка">
+            <p>
+            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+          </p>
+        </div>
+        <div class="advantages-item leaf">
+          <img src="img/leaf.svg" width="16" height="27" alt="Листик">
+          <p>
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, <br>экологически чистого сырья.
+          </p>
+        </div>
+
+        <div class="advantages-item therm">
+          <img src="img/thermometer.svg" width="16" height="26" alt="Градусник">
+          <p>
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+          </p>
+        </div>
+
     </section>
-
     <div class="article-wrapper">
       <article class="reciept">
         <h3>Новое в нашем блоге</h3>
@@ -189,7 +216,7 @@
   </main>
   <footer class="footer-container">
     <section class="socials">
-      <h2 class="display-none">Социальные сети</h2>
+      <h2 class="visually-hidden">Социальные сети</h2>
       <a class="social-button" href="#">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="white" fill-opacity="0.8" xmlns="http://www.w3.org/2000/svg">
           <path d="M16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0ZM20.06 9.45H17V12.9H20V16.34H17V25H14V16.34H11V12.9H14V9.45C13.9449 8.59575 14.2291 7.75426 14.7908 7.1083C15.3525 6.46234 16.1464 6.06407 17 6H20V9.45H20.06Z"/>
@@ -221,20 +248,23 @@
       </a>
     </section>
       <section class="footer-middle">
-        <h2 class="display-none">Навигация</h2>
-        <div>
+        <h2 class="visually-hidden">Навигация</h2>
             <img src="img/heart.svg" width="15" height="13" alt="Heart">
-            <a class="footer-link" href="#">Для поставщиков</a>
+        <div class="footer-middle-container">
+          <a class="footer-link" href="#">Для поставщиков</a>
+          <a class="footer-link footer-middle-item" href="#">О производстве</a>
+          <a class="footer-link" href="#">Наши документы</a>
+          <a class="footer-link" href="#">Экологические стандарты</a>
         </div>
-        <a class="footer-link footer-middle-item" href="#">О производстве</a>
-        <a class="footer-link" href="#">Наши документы</a>
-        <a class="footer-link" href="#">Экологические стандарты</a>
+
       </section>
       <div>
         <img src="img/logo_HTMLAcademy.png" width="108" height="31" alt="Лого HTML Academy">
         <p class="copyright"><a class="footer-link" href="https://htmlacademy.ru/">Сделано в HTML Academy © 2021</a></p>
       </div>
   </footer>
+</div>
+</div>
 </body>
 
 </html>

@@ -10,16 +10,21 @@
   <title>HTML Academy: Глейси</title>
 </head>
 <body class="page-body">
+  <div class="catalog-wrapper">
   <header class="header">
     <nav class="main-navigation">
-      <a href="index.html">
-        <img src="img/logo.png" width="154" height="64" alt="Логотип магазина Глейси">
-      </a>
-      <ul class="site-navigation">
-        <li class="nav-item"><a href="catalog.html">Каталог</a></li>
-        <li class="nav-item"><a href="#">Доставка и оплата</a></li>
-        <li class="nav-item"><a href="#">О компании</a></li>
-      </ul>
+        <a class="header-logo" href="index.html">
+          <img src="img/logo.png" width="154" height="64" alt="Логотип магазина Глейси">
+        </a>
+
+      <div class="catalog-nav">
+        <ul class="catalog-site-nav">
+          <li class="nav-item-active"><a href="#">Каталог</a></li>
+          <li class="catalog-nav-item"><a href="#">Доставка и оплата</a></li>
+          <li class="catalog-nav-item"><a href="#">О компании</a></li>
+        </ul>
+      </div>
+
       <div class="wrapper">
         <div class="search">
           <a class="search-icon" href="#">
@@ -55,71 +60,90 @@
     </nav>
     <ul class="breadcrumbs">
         <li><a class="crumbs-link" href="#">Главная</a></li>
+        <li>
         <div class="breadcrumbs-arrow">
           <img src="img/arrow.svg" width="6" height="6" alt="Стрелки">
         </div>
+      </li>
         <li><a class="crumbs-link" href="#">Каталог</a></li>
+        <li>
         <div class="breadcrumbs-arrow">
           <img src="img/arrow.svg" width="6" height="6" alt="Стрелки">
         </div>
+      </li>
         <li><a>Сливочное</a></li>
     </ul>
   </header>
   <main>
       <h1 class="catalog-title">Сливочное мороженое</h1>
-      <div class="filter">
-          <section>
-            <h2 class="filter-title"> Сортировка:</h2>
-          <form>
-            <select class="sort" name="sort" id="sort">
+
+          <section class="filters">
+            <form class="filter">
+            <fieldset class="sort">
+            <legend class="filter-title sort-title">Сортировка:</legend>
+            <select class="sort-select" name="sort" id="sort">
                 <option class="sort-item">по популярности</option>
                 <option class="sort-item">сначала недорогие</option>
                 <option class="sort-item">сначала дорогие</option>
                 <option class="sort-item">по жирности</option>
             </select>
-          </form>
-        </section>
-          <section>
-            <h2 class="filter-title">Цена: 100 ₽ – 500 ₽</h2>
-            <form class="filter-price">
+          </fieldset>
+            <fieldset class="filter-price">
+              <legend class="filter-title">Цена: 100 ₽ – 500 ₽:</legend>
                 <input type="range" name="price" id="price" min="0" max="800" step="100" value="100">
-            </form>
-          </section>
-          <section>
-            <h2 class="filter-title">Жирность:</h2>
-              <form class="fatgroup">
-                  <input type="radio" name="fatgroup" value><span>0%</span>
-                  <input type="radio" name="fatgroup" checked> <span>до 10%</span>
-                  <input type="radio" name="fatgroup"> <span>до 30%</span>
-                  <input type="radio" name="fatgroup"> <span>выше 30%</span>
-              </form>
-          </section>
-          <section class="filter-furnish">
-              <h2 class="filter-title">Наполнители:</h2>
-              <form class="filters">
-                  <input type="checkbox" name="shoko" id="shoko" checked>
+              </fieldset>
+
+            <fieldset class="fatgroup">
+              <legend class="filter-title">Жирность:</legend>
+              <ul class="fatgroup-list">
+                <li class="filter-option filter-radio"><input class="visually-hidden filter-input-radio" type="radio" name="fatgroup" value><label>0%</label></li>
+                <li class="filter-option filter-radio"><input class="visually-hidden filter-input-radio" type="radio" name="fatgroup" checked> <label>до 10%</label></li>
+                <li class="filter-option filter-radio"><input class="visually-hidden filter-input-radio" type="radio" name="fatgroup"> <label>до 30%</label></li>
+                <li class="filter-option filter-radio"><input class="visually-hidden filter-input-radio" type="radio" name="fatgroup"> <label>выше 30%</label></li>
+              </ul>
+                </fieldset>
+            <fieldset class="filter-furnish">
+            <legend class="filter-title">Наполнители:</legend>
+            <ul class="filter-option-list">
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="shoko" id="shoko" checked>
                   <label for="shoko">шоколадные</label>
-                  <input type="checkbox" name="sugar" id="sugar" checked>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="sugar" id="sugar" checked>
                   <label for="sugar">сахарные присыпки</label>
-                  <input type="checkbox" name="fruits" id="fruits">
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="fruits" id="fruits">
                   <label for="fruits">фрукты</label>
-                  <input type="checkbox" name="sirops" id="sirops">
-                  <label for="sirops">сиропы</label>
-                  <input type="checkbox" name="jams" id="jams">
-                  <label for="jams">джемы</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="sirops" id="sirops">
+                <label for="sirops">сиропы</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="jams" id="jams">
+                <label for="jams">джемы</label>
+              </li>
+            </ul>
+
+
+
+
+                </fieldset>
               </form>
+              <button class="filter-button" type="button">Применить</button>
           </section>
-          <button class="filter-button" type="button">Применить</button>
-      </div>
+
+
       <section class="product-container">
-        <h2 class="display-none">Список товаров!</h2>
+        <h2 class="visually-hidden">Список товаров!</h2>
         <ul class="product-list">
           <li class="product-item product5">
             <div class="price">
               <p>310 ₽</p>
               <span>/кг</span>
             </div>
-
             <p class="product-text">Сливочное с апельсиновым <br>джемом и цитрусовой стружкой</p>
             <button class="btn hidden">Быстрый просмотр</button>
           </li>
@@ -229,10 +253,10 @@
           <li><a class="pagination-item" href="#">></a></li>
       </ul>
       </div>
-
+    </main>
       <footer class="footer-container">
         <section class="socials">
-          <h2 class="display-none">Социальные сети</h2>
+          <h2 class="visually-hidden">Социальные сети</h2>
           <a class="social-button" href="#">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="white" fill-opacity="0.8" xmlns="http://www.w3.org/2000/svg">
               <path d="M16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0ZM20.06 9.45H17V12.9H20V16.34H17V25H14V16.34H11V12.9H14V9.45C13.9449 8.59575 14.2291 7.75426 14.7908 7.1083C15.3525 6.46234 16.1464 6.06407 17 6H20V9.45H20.06Z"/>
@@ -264,7 +288,7 @@
           </a>
         </section>
           <section class="footer-middle">
-            <h2 class="display-none">Навигация</h2>
+            <h2 class="visually-hidden">Навигация</h2>
             <div>
                 <img src="img/heart.svg" width="15" height="13" alt="Heart">
                 <a class="footer-link" href="#">Для поставщиков</a>
@@ -278,4 +302,6 @@
             <p class="copyright"><a class="footer-link" href="https://htmlacademy.ru/">Сделано в HTML Academy © 2021</a></p>
           </div>
       </footer>
-  </main>
+
+</div>
+</body>
