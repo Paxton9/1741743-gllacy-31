@@ -26,7 +26,8 @@
   --btn-gradient-focus: rgba(0, 0, 0, 0.07);
   --wrapper-shadow: rgba(0, 0, 0, 0.4);
   --input-border: rgba(46, 136, 228, 0.52);
-
+  --range-border: rgba(248, 247, 244, 0.5);
+  --range-toggle: #ABABAB;
 }
 
 .page-body {
@@ -410,7 +411,7 @@
 .price-hit {
   font-size: 45px;
   line-height: 45px;
-  margin-top: 150px;
+  margin-top: 155px;
   margin-bottom: 37px;
 }
 .price-hit p {
@@ -421,6 +422,9 @@
 .price-hit span {
   font-size: 30px;
   line-height: 35px;
+}
+.product-item {
+  min-height: 317px;
 }
 .product-item:hover .hidden{
   visibility: visible;
@@ -514,17 +518,19 @@
 .price {
   font-size: 45px;
   line-height: 45px;
-  margin-top: 220px;
-  margin-bottom: 37px;
+  margin-top: 216px;
+  margin-bottom: 23px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .price > p {
   margin: 0;
   padding: 0;
-  display: inline-flex
 }
 .price > span {
   font-size: 30px;
   line-height: 35px;
+  align-self: flex-end;
 }
 .product-text {
   text-align: center;
@@ -923,6 +929,43 @@
 .sort-item {
   color:var(--basic-black);
 }
+.range-controls {
+  position: relative;
+  height: 36px;
+  box-sizing: border-box;
+  background-color: var(--referense-background);
+  border-radius: 20px;
+  padding-top: 16px;
+  padding-right: 21px;
+  padding-left: 21px;
+}
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--basic-background);
+}
+.range-controls .scale {
+  height: 2px;
+  background: var(--range-border);
+}
+.range-controls .toggle {
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  padding: 0;
+  border: 8px solid var(--basic-background);
+  background-color: var(--range-toggle);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.range-controls .toggle-min {
+  left: 18px;
+}
+.range-controls .toggle-max {
+  left: 140px;
+}
 .filter-price {
   width: 218px;
 }
@@ -933,23 +976,36 @@
   display:flex;
   padding: 0;
   justify-content: space-between;
-  align-items: center;
   margin: 0;
   list-style: none;
   font-size: 16px;
   line-height: 18px;
   background-color: var(--referense-background);
   border-radius: 20px;
+  padding: 13px 35px 12px 45px;
+}
+.fatgroup-list:last-child {
+  padding-right: 17px;
 }
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  left: -25px;
+  left: -30px;
   top: -1px;
   width: 16px;
   height: 16px;
   border: 3px solid var(--border-white);
   border-radius: 50%
+}
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -23px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--border-white);
+  border-radius: 50%;
 }
 .filter-button {
   border: 2px solid var(--basic-white);

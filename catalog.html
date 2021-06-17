@@ -90,13 +90,34 @@
           </fieldset>
             <fieldset class="filter-price">
               <legend class="filter-title">Цена: 100 ₽ – 500 ₽:</legend>
-                <input type="range" name="price" id="price" min="0" max="800" step="100" value="100">
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="
+                    width: 60%;
+                    margin-left: 10%
+                  ">
+
+                    </div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"  style="
+                  left: 15%
+                "></div>
+                  <div class="toggle toggle-max" tabindex="0"
+                  style="
+              left: 60%
+            "></div>
+                </div>
+                <div class="price-controls">
+
+                </div>
+              </div>
               </fieldset>
 
             <fieldset class="fatgroup">
               <legend class="filter-title">Жирность:</legend>
               <ul class="fatgroup-list">
-                <li class="filter-option filter-radio"><input class="visually-hidden filter-input-radio" type="radio" name="fatgroup" value><label>0%</label></li>
+                <li class="filter-option filter-radio"><input class="visually-hidden filter-input-radio" type="radio" name="fatgroup"><label>0%</label></li>
                 <li class="filter-option filter-radio"><input class="visually-hidden filter-input-radio" type="radio" name="fatgroup" checked> <label>до 10%</label></li>
                 <li class="filter-option filter-radio"><input class="visually-hidden filter-input-radio" type="radio" name="fatgroup"> <label>до 30%</label></li>
                 <li class="filter-option filter-radio"><input class="visually-hidden filter-input-radio" type="radio" name="fatgroup"> <label>выше 30%</label></li>
