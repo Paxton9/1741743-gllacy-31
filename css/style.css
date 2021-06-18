@@ -28,6 +28,8 @@
   --input-border: rgba(46, 136, 228, 0.52);
   --range-border: rgba(248, 247, 244, 0.5);
   --range-toggle: #ABABAB;
+  --close-button: #2C2829;
+  --cart-border: #CACAC7;
 }
 
 .page-body {
@@ -93,10 +95,7 @@
   margin: 0 auto;
   padding: 0 20px;
 }
-/* .header {
-  min-width: 1146px;
-  min-height: 114px;
-} */
+
 
 .header-logo {
   width: 154px;
@@ -150,18 +149,25 @@
 }
 
 .search {
+  position: relative;
   background: var(--referense-background);
   width: 32px;
   height: 32px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .search:hover {
   background-color: var(--basic-white);
 }
-.search:hover .search-icon svg {
+.search:hover path {
   fill:var(--basic-black);
+}
+
+.search:hover .search-wrapper {
+  display: block;
 }
 .search-icon {
   padding: 8px;
@@ -272,9 +278,10 @@
 
 .slider-image {
   min-width: 1146px;
-  background-image: url("../img/Group5.png");
+  background: radial-gradient(rgba(215, 242, 227, 0.75), transparent) url("../img/Group5.png");
   background-repeat: no-repeat;
   background-position: top center;
+
 
 }
 
@@ -893,6 +900,9 @@
     height: 16px;
     border: 2px solid var(--border-white);
 }
+.filter-option  label::before:hover {
+  border-color: red;
+}
 
 .filter-input-checkbox:checked + label::after {
   content: "";
@@ -1062,31 +1072,64 @@
 
 /* Login form */
 .login-form-wrapper {
+  margin: 0 auto;
   width: 277px;
-  height: 214px;
   background-color: var(--basic-background);
   box-shadow: 0px 20px 20px var(--wrapper-shadow);
   border-radius: 4px;
+  display: none;
 }
+
+.login-btn {
+  width: 103px;
+  padding: 15px 10px;
+  margin-top: 20px;
+  margin-left: 19px;
+}
+
 .restore,
 .new-register {
   color: var(--basic-black);
 }
+
+
 .login-form input {
+  width: 219px;
   border: 1px solid var(--border-field);
   border-radius: 4px;
-  padding: 10px;
+  padding: 13px 10px;
+  margin-top: 20px;
+  margin-left: 19px;
+}
+.login-form input:last-child {
+  margin: 0;
 }
 .login-form input:hover {
   border: 2px solid var(--input-border);
 }
-
+.login-link-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search:hover .search-wrapper {
+  transition: all .3s;
+  opacity: 1;
+  visibility: visible;
+}
 .search-wrapper {
-background-color: var(--basic-background);
-width: 341px;
-height: 84px;
-box-shadow: 0px 20px 20px var(--wrapper-shadow);
-border-radius: 4px;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  /* display: none; */
+  background-color: var(--basic-background);
+  width: 341px;
+  height: 84px;
+  right: 0;
+  top: 50px;
+  box-shadow: 0px 20px 20px var(--wrapper-shadow);
+  border-radius: 4px;
+
 }
 .search-wrapper input {
   padding: 10px;
@@ -1094,7 +1137,78 @@ border-radius: 4px;
   line-height: 16px;
   width: 90%;
   margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 4px;
   border: 1px solid var(--border-field);
 }
+.cart-wrapper {
+  position: fixed;
+  margin: 0 auto;
+  width: 539px;
+  background-color: var(--basic-background);
+  box-shadow: 0px 20px 20px var(--wrapper-shadow);
+  border-radius: 4px;
+}
+.cart-product-container {
+  display:flex;
+  justify-content: center;
+  padding-top: 22px;
+}
+.cart-product-image {
+  background-image: url("../img/hit1.png");
+  background-size: contain;
+  width: 33px;
+  height: 33px;
+  object-fit: contain;
+  }
 
+.cart-product-image2 {
+  background-image: url("../img/hit3.png");
+  background-size: contain;
+  width: 33px;
+  height: 33px;
+}
+.cart-product-text {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--basic-black);
+}
+
+.cart-product-border {
+  width: 100%;
+  border-bottom: 1px solid var(--cart-border) ;
+}
+.buy-price {
+  display: flex;
+  justify-content: flex-end;
+}
+.cart-close {
+  position: relative;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.cart-close::before,
+.cart-close::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 15px;
+  height: 2px;
+  background-color: #2C2829;
+}
+.cart-close::before {
+  transform: rotate(45deg);
+}
+
+.cart-close::after {
+  transform: rotate(-45deg);
+}
