@@ -17,7 +17,21 @@
         <img src="img/logo.png" width="154" height="64" alt="Логотип магазина Глейси">
       </a>
       <ul class="site-navigation">
-        <li class="nav-item"><a href="catalog.html">Каталог</a></li>
+        <li class="nav-item">
+          <div class="catalog-page-list">
+          <a class="catalog-link" href="catalog.html">Каталог</a>
+          <div class="catalog-list-wrapper">
+            <h2 class="catalog-title-new">Новинки</h2>
+            <div class="catalog-border"></div>
+          <ul class="catalog-list">
+            <li class="catalog-item"><a href="#">Сливочное</a></li>
+            <li class="catalog-item"><a href="#">Щербеты</a></li>
+            <li class="catalog-item"><a href="#">Фруктовый лед</a></li>
+            <li class="catalog-item"><a href="#">Мелорин</a></li>
+          </ul>
+        </div>
+        </div>
+        </li>
         <li class="nav-item"><a href="#">Доставка и оплата</a></li>
         <li class="nav-item"><a href="#">О компании</a></li>
       </ul>
@@ -39,8 +53,23 @@
               <path d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z"/>
               <path d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579 0.585786C3.21071 0.960859 3 1.46957 3 2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z"/>
               </svg>
-          <a class="login-item" href="#">Вход</a>
-        </div>
+          <span class="login-item">Вход</span>
+          <div class="login-form-wrapper">
+            <form class="login-form">
+              <input type="text" name="login" placeholder="email@example.com">
+              <input type="password" name="password" placeholder="*******">
+              <div class="link-wrapper">
+                <div>
+                  <button class="btn login-btn" type="submit">Войти</button>
+                </div>
+
+                <div class=login-links>
+                  <a class="restore" href="blank.html">Забыли пароль?</a>
+                  <a class="new-register" href="blank.html">Новая регистрация</a>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="cart">
 
             <svg width="21" height="20" viewBox="0 0 21 20" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -49,9 +78,9 @@
               <path d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z"/>
               </svg>
 
-          <a class="cart-text" href="#">Пусто</a>
+          <span class="cart-text">Пусто</span>
         </div>
-      </div>
+        </div>
       <div class="phone-info">
         <p class="text-time">с 10 до 20, ежедневно</p>
         <a class="phone" href="tel:88124502525">8 812 450-25-25</a>
