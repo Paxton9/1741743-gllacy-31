@@ -843,18 +843,25 @@ background-image: radial-gradient(circle, rgba(215, 242, 227, 0.75) 150px, trans
   margin-left: 5px;
 }
 .maps {
+  position: relative;
   background-image: url('../img/maps.jpg');
-  min-width: 1200px;
+  min-width: 100%;
   height: 430px;
   background-position: left center;
   background-repeat: no-repeat;
   margin-bottom: 18px;
-  display: flex;
-  justify-content: space-evenly;
 }
-
+.pin {
+  position: absolute;
+  width: 80px;
+  top: 95px;
+  left: 315px;
+}
 .contacts {
+  position: absolute;
   padding-left: 25px;
+  top: 62px;
+  right: 27px;
 }
 .contacts-title {
   font-weight: normal;
@@ -977,17 +984,6 @@ background-image: radial-gradient(circle, rgba(215, 242, 227, 0.75) 150px, trans
   color:var(--basic-white);
 }
 
-.catalog-nav-item a:hover {
-  color:var(--basic-black);
-  background: var(--basic-white);
-  border-radius: 26px;
-}
-.catalog-nav-item a:active {
-  color: var(--basic-black);
-  background-color: var(--special-hover-white);
-  box-shadow: inset 0px 2px 1px var(--shaodw-inset);
-  border-radius: 26px;
-}
 .nav-item-active {
   background-color: var(--extra-red);
   border-radius: 26px;
@@ -1493,6 +1489,8 @@ background-image: radial-gradient(circle, rgba(215, 242, 227, 0.75) 150px, trans
   flex-wrap: wrap;
   z-index: 8;
   display: none;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 1200px rgba(0, 0, 0, 0.3);
 }
 .feedback-title {
   font-weight: 500;
