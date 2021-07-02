@@ -1642,6 +1642,12 @@
 .catalog-item:active {
   background-color: var(--catalog-focus);
 }
+.catalog-item-current {
+  background-color: var(--extra-red);
+}
+.catalog-item-current a {
+  color:var(--basic-white);
+}
 .catalog-border {
   border: 1px solid var(--catalog-border);
   margin-left: 6px;
@@ -1783,4 +1789,8 @@
 
 .modal-error {
   animation: shake 0.6s;
+}
+
+.modal-animation {
+  animation: bounce 0.6s;
 }

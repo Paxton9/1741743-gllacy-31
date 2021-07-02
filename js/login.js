@@ -13,7 +13,8 @@ try {
 }
 loginLink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modalLogin.classList.toggle("modal-hidden");
+  modalLogin.classList.remove("modal-hidden");
+  modalLogin.classList.add("modal-animation");
 });
 
 loginForm.addEventListener("submit", function (evt) {
@@ -27,4 +28,9 @@ loginForm.addEventListener("submit", function (evt) {
       localStorage.setItem("login", loginLogin.value);
     }
   }
+});
+loginLink.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+      modalLogin.classList.add("modal-hidden");
+    }
 });
