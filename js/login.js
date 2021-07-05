@@ -1,5 +1,5 @@
 const loginLink = document.querySelector(".login-link");
-const modalLogin = document.querySelector(".login-form-wrapper")
+const modalLogin = document.querySelector(".login-form-wrapper");
 const loginForm = modalLogin.querySelector(".login-form");
 const loginLogin = modalLogin.querySelector("[name=login]");
 const loginPassword = modalLogin.querySelector("[name=password]");
