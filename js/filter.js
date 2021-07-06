@@ -1,4 +1,4 @@
 const filter = document.querySelector(".filters");
-const form = filter.querySelector(".filter");
-form.addEventListener("submit", function (evt) {
+const filterForm = filter.querySelector(".filter");
+filterForm.addEventListener("submit", function (evt) {
 });
