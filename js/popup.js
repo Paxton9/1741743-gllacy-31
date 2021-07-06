@@ -2,6 +2,7 @@ const popup = document.querySelector(".feedback-wrapper");
 const contactbtn = document.querySelector(".contacts-btn");
 const close = document.querySelector(".close");
 const login = popup.querySelector("[name=fullname]");
+const mail = popup.querySelector("[name=login]")
 const form = popup.querySelector("form");
 contactbtn.addEventListener ("click", function (evt) {
   evt.preventDefault
@@ -18,4 +19,13 @@ close.addEventListener ("click", function (evt) {
 form.addEventListener("submit", function (evt) {
   evt.preventDefault();
 });
-
+form.addEventListener("submit", function (evt) {
+  if (!login.value || !mail.value) {
+    evt.preventDefault();
+    popup.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("login", mail.value);
+    }
+  }
+});
