@@ -1198,7 +1198,9 @@ align-items: center;
     height: 16px;
     border: 2px solid var(--border-white);
 }
-
+.filter-input-checkbox:checked + label::before {
+  opacity: 0;
+}
 .filter-input-checkbox + label:hover::before {
   border: 2px solid var(--basic-white);
 }
@@ -1215,6 +1217,7 @@ align-items: center;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 .filter-input-checkbox:checked + label:hover:after {
   content: "";
   position: absolute;
