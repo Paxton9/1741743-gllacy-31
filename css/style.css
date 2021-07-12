@@ -357,6 +357,7 @@
   grid-row: 2;
   justify-self: flex-end;
   position: absolute;
+  z-index: 2;
 }
 
 .slider {
@@ -778,7 +779,7 @@
 .advantages-item {
   margin: 0;
   padding: 0;
-  padding-bottom: 24px;
+  padding-bottom: 19px;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -813,7 +814,9 @@
 .cow {
   padding-left: 26px;
 }
-
+.leaf {
+  padding-bottom: 22px;
+}
 .btn {
   background: linear-gradient(180deg, var(--btn-gradient) 0%, var(--btn-gradient100) 100%);
   box-shadow: 0px 2px 2px var(--btn-shadow);
