@@ -763,7 +763,6 @@
   flex-wrap: wrap;
   width: 1146px;
   box-sizing: border-box;
-  padding-bottom: 2px;
 }
 
 .advantages-caption {
@@ -779,7 +778,7 @@
 .advantages-item {
   margin: 0;
   padding: 0;
-  padding-bottom: 33px;
+  padding-bottom: 24px;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
@@ -792,6 +791,7 @@
   width: 485px;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
   align-self: flex-start;
 }
 
