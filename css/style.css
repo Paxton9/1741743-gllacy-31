@@ -385,7 +385,7 @@
   min-width: 1146px;
   background: url("../img/Group5.png");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top 10px center;
 
 
 }
@@ -475,6 +475,7 @@
 
 .container {
   position: relative;
+  height: auto;
 }
 
 .feature-container {
@@ -952,6 +953,7 @@
   padding-left: 25px;
   top: 62px;
   right: 27px;
+  cursor: pointer;
 }
 
 .contacts-title {
@@ -1417,6 +1419,7 @@ align-items: center;
   border-radius: 50%;
   padding: 10px 15px;
   height: 26px;
+  cursor: pointer;
 }
 .current {
   color:var(--basic-black);
