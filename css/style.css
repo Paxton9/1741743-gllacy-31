@@ -537,12 +537,11 @@
 
 .product-list {
   width: 1146px;
-  margin: 0 auto;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: -50px;
 }
 
 .product-list li {
@@ -557,7 +556,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  display: none;
+  visibility: hidden;
   margin-bottom: 21px;
   padding: 10px 15px;
 }
@@ -598,6 +597,8 @@
   margin: 0;
   padding: 0;
   margin-right: 26px;
+  background-repeat: no-repeat;
+  width: 267px;
 
 }
 
@@ -606,11 +607,14 @@
 }
 
 .product-item:hover .hidden{
-  display: block;
+  visibility: visible;
+  transition: all .3s;
+  z-index: 0;
 }
 
 .product-item:hover .price, .price-hit{
   margin-left: 13px;
+  transition: all .3s
 }
 
 .product-item:hover {
@@ -619,104 +623,73 @@
   width: 293px;
   justify-content: center;
   background-position: top 6px center;
+  transition: all .3s
 
 
 }
 
 .product1 {
   background-image: url(../img/hit1.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product2 {
   background-image: url(../img/hit2.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product3 {
   background-image: url(../img/hit3.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product4 {
   background-image: url(../img/hit4.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product5 {
   background-image: url(../img/hit1.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product6 {
   background-image: url(../img/hit2.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product7 {
   background-image: url(../img/hit3.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product8 {
   background-image: url(../img/hit4.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product9 {
   background-image: url(../img/icecream1.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product10 {
   background-image: url(../img/icecream2.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product11 {
   background-image: url(../img/icecream3.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product12 {
   background-image: url(../img/icecream4.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product13 {
   background-image: url(../img/icecream5.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product14 {
   background-image: url(../img/icecream6.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product15 {
   background-image: url(../img/icecream7.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .product16 {
   background-image: url(../img/icecream8.png);
-  background-repeat: no-repeat;
-  width: 267px;
 }
 
 .price {
@@ -1033,7 +1006,7 @@ align-items: flex-end;
   align-items: flex-end;
 }
 .footer-middle img {
-  margin-top: 15px;
+  margin-top: 20px;
   align-self: flex-start;
 }
 .footer-middle-container {
@@ -1391,6 +1364,7 @@ align-items: flex-end;
   opacity: .8;
   border-radius: 50%;
 }
+
 .filter-input-radio:checked + label:hover::after{
   content: "";
   position: absolute;
