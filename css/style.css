@@ -621,7 +621,6 @@
 }
 
 
-
 .product-item:nth-child(4n) {
   margin-right: 0px;
 }
@@ -704,27 +703,7 @@
   background-image: url(../img/icecream8.png);
 }
 
-.price {
-  font-size: 45px;
-  line-height: 45px;
-  margin-top: 216px;
-  margin-bottom: 23px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-self: flex-start;
-  align-self: flex-start;
-}
 
-.price > p {
-  margin: 0;
-  padding: 0;
-}
-
-.price > span {
-  font-size: 30px;
-  line-height: 35px;
-  align-self: flex-end;
-}
 
 .product-text {
   text-align: center;
