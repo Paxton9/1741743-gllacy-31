@@ -161,50 +161,57 @@
         <section class="product-container">
           <h2 class="visually-hidden">Список товаров!</h2>
           <ul class="product-list">
-            <li class="product-item product1">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
-              <div class="price-hit">
-                <p>310 ₽</p>
-                <span>/кг</span>
-              </div>
-              <p class="product-text">Сливочное с апельсиновым <br>джемом и цитрусовой стружкой</p>
-              <button class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</button>
-            </li>
-            <li class="product-item product2">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
-              <div class="price-hit">
-                <p>380 ₽</p>
-                <span>/кг</span>
-              </div>
-              <p class="product-text">Сливочно-кофейное с кусочками <br>шоколада</p>
-              <button class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</button>
-            </li>
-            <li class="product-item product3">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
-              <div class="price-hit">
-                <p>355 ₽</p>
-                <span>/кг</span>
+            <li class="product-item ">
+              <div class="product-item__body product1">
+                <div class="hit active">
+                  <img src="img/hit.svg" width="34" height="27" alt="Хит">
+                </div>
+                <div class="price-hit">
+                  <p>310₽<span>/кг</span></p>
+                </div>
+                <p class="product-text">Сливочное с апельсиновым <br>джемом и цитрусовой стружкой</p>
+                <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
               </div>
 
-              <p class="product-text">Сливочно-клубничное <br>с присыпкой из белого шоколада</p>
-              <button class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</button>
             </li>
-            <li class="product-item product4">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
+            <li class="product-item ">
+              <div class="product-item__body product2">
+                <div class="hit active">
+                  <img src="img/hit.svg" width="34" height="27" alt="Хит">
+                </div>
+                <div class="price-hit">
+                  <p>380₽<span>/кг</span></p>
+                </div>
+                <p class="product-text">Сливочно-кофейное с кусочками <br>шоколада</p>
+                <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
               </div>
-              <div class="price-hit">
-                <p>415 ₽</p>
-                <span>/кг</span>
+
+            </li>
+            <li class="product-item ">
+              <div class="product-item__body product3">
+                <div class="hit active">
+                  <img src="img/hit.svg" width="34" height="27" alt="Хит">
+                </div>
+                <div class="price-hit">
+                  <p>355₽<span>/кг</span></p>
+                </div>
+                <p class="product-text">Сливочно-клубничное <br>с присыпкой из белого шоколада</p>
+                <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
               </div>
-              <p class="product-text">Сливочное крем-брюле <br>с карамельной подливкой </p>
-              <button class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</button>
+
+            </li>
+            <li class="product-item ">
+              <div class="product-item__body product4">
+                <div class="hit active">
+                  <img src="img/hit.svg" width="34" height="27" alt="Хит">
+                </div>
+                <div class="price-hit">
+                  <p>415₽<span>/кг</span></p>
+                </div>
+                <p class="product-text">Сливочное крем-брюле <br>с карамельной подливкой </p>
+                <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
+              </div>
+
             </li>
           </ul>
 
@@ -264,21 +271,26 @@
         </div>
     </div>
     <div class="maps">
-      <div class="pin">
-        <img src="img/Pin.svg" width="80" height="140" alt="Пин">
-      </div>
-      <div class="contacts-wrapper">
-        <div class="contacts">
-          <h2 class="contacts-title">Адрес главного офиса <br>и офлайн-магазина:</h2>
-          <b>наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</b>
-          <p class="contacts-item">
-            Для заказов по телефону:
-          </p>
-          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-          <p class="datetime">(с 10 до 20 ежедневно)</p>
-          <button class="btn contacts-btn" type="button">Форма обратной связи</button>
+      <div class="site-container">
+        <div class="pin">
+          <img src="img/Pin.svg" width="80" height="140" alt="Пин">
         </div>
+        <div class="contacts-wrapper">
+          <div class="contacts">
+            <h2 class="contacts-title">Адрес главного офиса <br>и офлайн-магазина:</h2>
+            <b>наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</b>
+            <p class="contacts-item">
+              Для заказов по телефону:
+            </p>
+            <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+            <p class="datetime">(с 10 до 20 ежедневно)</p>
+            <button class="btn contacts-btn" type="button">Форма обратной связи</button>
+          </div>
+        </div>
+
+
       </div>
+
     </div>
     </main>
 
