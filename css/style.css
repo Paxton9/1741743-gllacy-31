@@ -539,9 +539,9 @@
   width: 1146px;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   padding: 0;
-  margin-bottom: -50px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .product-list li {
@@ -549,14 +549,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+
 }
 
 .hidden {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  visibility: hidden;
+  display: none;
   margin-bottom: 21px;
   padding: 10px 15px;
 }
@@ -607,7 +607,7 @@
 }
 
 .product-item:hover .hidden{
-  visibility: visible;
+  display: block;
   transition: all .3s;
   z-index: 0;
 }
@@ -623,7 +623,8 @@
   width: 293px;
   justify-content: center;
   background-position: top 6px center;
-  transition: all .3s
+  transition: all .3s;
+  z-index: 5;
 
 
 }
@@ -1399,6 +1400,7 @@ align-items: flex-end;
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  margin-top: 80px;
   margin-bottom: 48px;
 }
 .pagination-list {
