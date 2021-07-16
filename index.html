@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
@@ -26,7 +26,6 @@
                 <a class="catalog-link" href="catalog.html">Каталог</a>
                 <div class="catalog-list-wrapper">
                   <h2 class="catalog-title-new">Новинки</h2>
-                  <div class="catalog-border"></div>
                   <ul class="catalog-list">
                     <li class="catalog-item"><a href="catalog.html">Сливочное</a></li>
                     <li class="catalog-item"><a href="#">Щербеты</a></li>
@@ -50,7 +49,7 @@
 
               <div class="search-wrapper modal-hidden">
                 <form>
-                  <input type="text" name="search" placeholder="Крем-брюле">
+                  <input type="search" name="search" placeholder="Крем-брюле">
                 </form>
               </div>
             </div>
@@ -64,7 +63,7 @@
               <span class="login-item">Вход</span>
               <div class="login-form-wrapper modal-hidden">
                 <form class="login-form" method="post">
-                  <input type="text" name="login" placeholder="email@example.com">
+                  <input type="email" name="login" placeholder="email@example.com">
                   <input type="password" name="password" placeholder="*******">
                   <div class="link-wrapper">
                     <div>
@@ -148,14 +147,14 @@
             <h2 class="features-title">Малинка даром!</h2>
             <p class="feature-item">При покупке 2 кг любого фруктового мороженого, добавим <br>в ваш заказ банку
               малинового варенья бесплатно.</p>
-            <button class="btn feature-btn" type="button">Хочу варенье!</button>
+            <a href="#" class="btn feature-btn">Хочу варенье!</a>
           </section>
           <section class="features-shoko">
             <h2 class="features-title">Шоколадки даром!</h2>
             <p class="feature-item">При покупке 2 кг пломбира, добавим в ваш заказ упаковку <br>вкуснейшей шоколадной
               присыпки совершенно
               бесплатно.</p>
-            <button class="btn feature-btn" type="button">Хочу шоколадки!</button>
+            <a href="#" class="btn feature-btn">Хочу шоколадки!</a>
           </section>
         </div>
         <section class="product-container">
@@ -166,6 +165,7 @@
                 <div class="hit active">
                   <img src="img/hit.svg" width="34" height="27" alt="Хит">
                 </div>
+                <img src="img/orange.jpg" width="267" height="267" alt="Апельсиновое мороженное">
                 <div class="price-hit">
                   <p>310₽<span>/кг</span></p>
                 </div>
@@ -179,6 +179,7 @@
                 <div class="hit active">
                   <img src="img/hit.svg" width="34" height="27" alt="Хит">
                 </div>
+                <img src="img/shoko.jpg" width="267" height="267" alt="Шоколадное мороженное">
                 <div class="price-hit">
                   <p>380₽<span>/кг</span></p>
                 </div>
@@ -192,6 +193,7 @@
                 <div class="hit active">
                   <img src="img/hit.svg" width="34" height="27" alt="Хит">
                 </div>
+                <img src="img/strawberry.jpg" width="267" height="267" alt="Клубничное мороженное">
                 <div class="price-hit">
                   <p>355₽<span>/кг</span></p>
                 </div>
@@ -205,6 +207,7 @@
                 <div class="hit active">
                   <img src="img/hit.svg" width="34" height="27" alt="Хит">
                 </div>
+                <img src="img/caramel.jpg" width="267" height="267" alt="Карамельное мороженное">
                 <div class="price-hit">
                   <p>415₽<span>/кг</span></p>
                 </div>
@@ -218,24 +221,21 @@
         </section>
         <section class="advantages-list">
           <h2 class="advantages-caption">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного
-            <br>производства на развес</h2>
+            <br>производства на развес
+          </h2>
           <div class="advantages-item icecream">
-            <img src="img/icecream.svg" width="16" height="32" alt="Мороженное">
             <p>
               Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
               и проверенных временем технологий.
             </p>
           </div>
           <div class="advantages-item cow">
-
-            <img src="img/cow.svg" width="24" height="24" alt="Коровка">
             <p>
               Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
               связывает долговременное сотрудничество.
             </p>
           </div>
           <div class="advantages-item leaf">
-            <img src="img/leaf.svg" width="16" height="27" alt="Листик">
             <p>
               Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
               дополнительные ингредиенты и добавки произведены из натурального, <br>экологически чистого сырья.
@@ -243,7 +243,6 @@
           </div>
 
           <div class="advantages-item therm">
-            <img src="img/thermometer.svg" width="16" height="26" alt="Градусник">
             <p>
               Доставка нашего мороженого до заказчиков осуществляется <br>в специальном термопаке, который не дает
               мороженому растаять в пути и позволяет сохранить превосходный вкус.
@@ -264,8 +263,11 @@
               <div>
 
               </div>
-              <input class="mail" type="email" name="mail" placeholder="email@example.com">
-              <input class="btn subscrib-btn" type="submit" name="button" value="Отправить">
+              <form class="subscrib-form">
+                <input class="mail" type="email" name="mail" placeholder="email@example.com">
+                <input class="btn subscrib-btn" type="submit" name="button" value="Отправить">
+              </form>
+
             </div>
           </article>
         </div>
@@ -284,7 +286,7 @@
             </p>
             <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
             <p class="datetime">(с 10 до 20 ежедневно)</p>
-            <button class="btn contacts-btn" type="button">Форма обратной связи</button>
+            <a href="#" class="btn contacts-btn">Форма обратной связи</a>
           </div>
         </div>
 
@@ -355,9 +357,10 @@
 
       </section>
       <div class="footer-end">
-        <img src="img/logo_HTMLAcademy.png" width="108" height="31" alt="Лого HTML Academy">
-        <p class="copyright">Сделано в <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML
-            Academy © 2021</a></p>
+        <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo_HTMLAcademy.png" width="108" height="31" alt="Лого HTML Academy">
+        </a>
+        <p class="copyright">Сделано в HTML Academy © 2021</p>
       </div>
     </footer>
 
@@ -367,8 +370,8 @@
       <h2 class="feedback-title">Мы обязательно вам ответим!</h2>
       <form class="feedback-form">
         <input type="text" name="fullname" placeholder="Имя Фамилия">
-        <input type="text" name="login" placeholder="email@example.com">
-        <textarea name="free-form" id="free-form" cols="50" rows="9" placeholder="В свободной форме"></textarea>
+        <input type="email" name="login" placeholder="email@example.com">
+        <textarea name="free-form" id="free-form" cols="40" rows="9" placeholder="В свободной форме"></textarea>
         <button class="btn feedback-btn" type="submit">Отправить</button>
       </form>
 
