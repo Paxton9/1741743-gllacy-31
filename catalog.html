@@ -65,20 +65,20 @@
             </svg>
             <span class="login-item">Вход</span>
             <div class="login-form-wrapper modal-hidden">
-              <form class="login-form">
-                <input type="text" name="login" placeholder="email@example.com">
+              <form class="login-form" method="post">
+                <input type="email" name="login" placeholder="email@example.com">
                 <input type="password" name="password" placeholder="*******">
-              </form>
-              <div class="link-wrapper">
-                <div>
-                  <button class="btn login-btn" type="submit">Войти</button>
-                </div>
+                <div class="link-wrapper">
+                  <div>
+                    <button class="btn login-btn" type="submit">Войти</button>
+                  </div>
 
-                <div class=login-links>
-                  <a class="restore" href="blank.html">Забыли пароль?</a>
-                  <a class="new-register" href="blank.html">Новая регистрация</a>
+                  <div class=login-links>
+                    <a class="restore" href="blank.html">Забыли пароль?</a>
+                    <a class="new-register" href="blank.html">Новая регистрация</a>
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
           <div class="active-cart" tabindex="0">
@@ -101,6 +101,7 @@
               <div class="cart-product-container">
                 <button class="cart-close" type="button" aria-label="Убрать товар"></button>
                 <div class="cart-product-image">
+                  <img src="img/orange.jpg" width="33" height="33" alt="Апельсиновое мороженное">
                 </div>
                 <p class="cart-product-text">Пломбир с апельсиновым джемом</p>
                 <div class="cart-price"><span>1,5 кг х</span> <span class="light-price">200 руб.</span></div>
@@ -108,7 +109,8 @@
               </div>
               <div class="cart-product-container">
                 <button class="cart-close" type="button" aria-label="Убрать товар"></button>
-                <div class="cart-product-image2">
+                <div class="cart-product-image">
+                  <img src="img/strawberry.jpg" width="33" height="33" alt="Клубничное мороженное">
                 </div>
                 <p class="cart-product-text">Клубничный пломбир с присыпкой <br>из белого шоколада</p>
                 <div class="cart-price"><span>1,5 кг х</span> <span class="light-price">300 руб.</span></div>
@@ -225,161 +227,144 @@
           </fieldset>
           <button class="filter-button" type="submit" aria-label="Применить все фильтры." tabindex="0">Применить</button>
         </form>
-
       </section>
-
 
       <section class="product-container">
         <h2 class="visually-hidden">Список товаров!</h2>
         <ul class="product-list">
           <li class="product-item ">
-            <div class="product-item__body product1">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
+            <div class="product-item__body">
+              <div class="hit"></div>
+              <img src="img/orange.jpg" width="267" height="267" alt="Апельсиновое мороженное">
               <div class="price-hit">
                 <p>310₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочное с апельсиновым <br>джемом и цитрусовой стружкой</p>
-              <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
+              <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
             </div>
           </li>
 
           <li class="product-item ">
-            <div class="product-item__body product2">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
+            <div class="product-item__body">
+              <div class="hit"></div>
+              <img src="img/shoko.jpg" width="267" height="267" alt="Апельсиновое мороженное">
               <div class="price-hit">
                 <p>380₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочно-кофейное с кусочками <br>шоколада</p>
-              <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
+              <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
             </div>
           </li>
-
           <li class="product-item ">
-            <div class="product-item__body product3">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
+            <div class="product-item__body">
+              <div class="hit"></div>
+                <img src="img/strawberry.jpg" width="267" height="267" alt="Апельсиновое мороженное">
               <div class="price-hit">
                 <p>355₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочно-клубничное <br>с присыпкой из белого шоколада</p>
-              <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
+              <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
             </div>
           </li>
           <li class="product-item ">
-            <div class="product-item__body product4">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
+            <div class="product-item__body">
+              <div class="hit"></div>
+              <img src="img/caramel.jpg" width="267" height="267" alt="Апельсиновое мороженное">
               <div class="price-hit">
                 <p>415₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочное крем-брюле <br>с карамельной подливкой </p>
-              <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
+              <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
             </div>
           </li>
           <li class="product-item ">
-            <div class="product-item__body product11">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
+            <div class="product-item__body">
+              <div class="hit"></div>
+              <img src="img/cowberry.jpg" width="267" height="267" alt="Апельсиновое мороженное">
               <div class="price-hit">
                 <p>325₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочное с брусничным <br>джемом</p>
-              <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
+              <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
             </div>
           </li>
           <li class="product-item ">
-            <div class="product-item__body product10">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
+            <div class="product-item__body">
+              <div class="hit"></div>
+              <img src="img/bilberry.jpg" width="267" height="267" alt="Апельсиновое мороженное">
               <div class="price-hit">
                 <p>410₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочно-черничное с цельными <br> ягодами черники </p>
-              <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
+              <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
             </div>
           </li>
           <li class="product-item ">
-            <div class="product-item__body product9">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
+            <div class="product-item__body">
+              <div class="hit"></div>
+              <img src="img/lemoncaramel.jpg" width="267" height="267" alt="Апельсиновое мороженное">
               <div class="price-hit">
                 <p>315₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочно-лимонное с<br>карамельной присыпкой</p>
-              <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
+              <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
             </div>
           </li>
           <li class="product-item ">
-            <div class="product-item__body product8">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
+            <div class="product-item__body">
+              <div class="hit"></div>
+              <img src="img/cchipshoko.jpg" width="267" height="267" alt="Апельсиновое мороженное">
               <div class="price-hit">
                 <p>320₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочное с шоколадной <br>стружкой</p>
-              <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
+              <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
             </div>
           </li>
           <li class="product-item ">
-            <div class="product-item__body product7">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
+            <div class="product-item__body">
+              <div class="hit"></div>
+              <img src="img/vanilshoko.jpg" width="267" height="267" alt="Апельсиновое мороженное">
               <div class="price-hit">
                 <p>430₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочно-ванильное <br>с кусочками шоколада</p>
-              <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
+              <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
             </div>
           </li>
           <li class="product-item ">
-            <div class="product-item__body product6">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
+            <div class="product-item__body">
+              <div class="hit"></div>
+              <img src="img/menthol.jpg" width="267" height="267" alt="Апельсиновое мороженное">
               <div class="price-hit">
                 <p>435₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочноe с ментоловым <br>сиропом</p>
-              <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
+              <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
             </div>
           </li>
           <li class="product-item ">
-            <div class="product-item__body product5">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
+            <div class="product-item__body">
+              <div class="hit"></div>
+              <img src="img/shokopiecec.jpg" width="267" height="267" alt="Апельсиновое мороженное">
               <div class="price-hit">
                 <p>355₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочное с кусочками черного <br>шоколада</p>
-              <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
+              <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
             </div>
           </li>
           <li class="product-item ">
-            <div class="product-item__body product12">
-              <div class="hit">
-                <img src="img/hit.svg" width="34" height="27" alt="Хит">
-              </div>
+            <div class="product-item__body">
+              <div class="hit"></div>
+              <img src="img/minticecream.jpg" width="267" height="267" alt="Апельсиновое мороженное">
               <div class="price-hit">
                 <p>420₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочное с мятным сиропом</p>
-              <a class="btn hidden" aria-label="Просмотр товара.">Быстрый просмотр</a>
+              <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
             </div>
           </li>
-
-
         </ul>
       </section>
       <div class="pagination">
@@ -458,7 +443,6 @@
       </section>
       <section class="footer-middle">
         <h2 class="visually-hidden">Навигация</h2>
-        <img src="img/heart.svg" width="15" height="13" alt="Heart">
         <div class="footer-middle-container">
           <a class="footer-link footer-item" href="#">Для поставщиков</a>
           <a class="footer-link footer-middle-item" href="#">О производстве</a>
