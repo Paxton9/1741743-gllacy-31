@@ -1860,9 +1860,6 @@ input:disabled + label {
 
 .catalog-item {
   font-weight: normal;
-  padding-left: 21px;
-  padding-top: 7px;
-  padding-bottom: 8px;
   cursor: pointer;
 }
 
@@ -1875,6 +1872,10 @@ input:disabled + label {
   margin: 0;
   text-decoration: none;
   color: var(--basic-black);
+  padding-left: 21px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  display: block;
 }
 
 .catalog-item:hover {
