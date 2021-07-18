@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
@@ -16,7 +16,7 @@
 <body class="page-body">
   <div class="container">
     <header class="header">
-      <nav class="main-navigation">
+      <nav class="main-navigation catalog-main__navigation">
         <a class="header-logo" href="index.html">
           <img src="img/logo.png" width="154" height="64" alt="Логотип магазина Глейси">
         </a>
@@ -107,12 +107,12 @@
                 <div class="cart-price"><span>1,5 кг х</span> <span class="light-price">200 руб.</span></div>
                 <span class="total-price">300 руб.</span>
               </div>
-              <div class="cart-product-container">
+              <div class="cart-product-container cart-product-container2">
                 <button class="cart-close" type="button" aria-label="Убрать товар"></button>
                 <div class="cart-product-image">
                   <img src="img/strawberry.jpg" width="33" height="33" alt="Клубничное мороженное">
                 </div>
-                <p class="cart-product-text">Клубничный пломбир с присыпкой <br>из белого шоколада</p>
+                <p class="cart-product-text cart-product-text__2">Клубничный пломбир с присыпкой <br>из белого шоколада</p>
                 <div class="cart-price"><span>1,5 кг х</span> <span class="light-price">300 руб.</span></div>
                 <span class="total-price">450 руб.</span>
               </div>
@@ -167,10 +167,10 @@
                   </div>
                 </div>
                 <div class="toggle toggle-min" tabindex="0" style="
-                  left: 15%
+                  left: 16%
                 "></div>
                 <div class="toggle toggle-max" tabindex="0" style="
-              left: 60%
+              left: 61%
             "></div>
               </div>
               <div class="price-controls">
@@ -180,7 +180,7 @@
           </fieldset>
 
           <fieldset class="fatgroup" tabindex="0">
-            <legend class="filter-title">Жирность:</legend>
+            <legend class="filter-title fatgroup-title">Жирность:</legend>
             <ul class="fatgroup-list">
               <li class="filter-option filter-radio" tabindex="0">
                 <input class="visually-hidden filter-input-radio" type="radio" id="r1" name="fatgroup"
@@ -201,7 +201,7 @@
             </ul>
           </fieldset>
           <fieldset class="filter-furnish" tabindex="0">
-            <legend class="filter-title">Наполнители:</legend>
+            <legend class="filter-title filter-furnish-title">Наполнители:</legend>
             <ul class="filter-option-list" tabindex="0">
               <li class="filter-option" tabindex="0">
                 <input class="visually-hidden filter-input-checkbox" type="checkbox" name="shoko" id="shoko" checked>
@@ -236,8 +236,8 @@
             <div class="product-item__body">
               <div class="hit"></div>
               <img src="img/orange.jpg" width="267" height="267" alt="Апельсиновое мороженное">
-              <div class="price-hit">
-                <p>310₽<span>/кг</span></p>
+              <div class="price-hit first-price">
+                <p>310 ₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочное с апельсиновым <br>джемом и цитрусовой стружкой</p>
               <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
@@ -249,7 +249,7 @@
               <div class="hit"></div>
               <img src="img/shoko.jpg" width="267" height="267" alt="Апельсиновое мороженное">
               <div class="price-hit">
-                <p>380₽<span>/кг</span></p>
+                <p>380 ₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочно-кофейное с кусочками <br>шоколада</p>
               <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
@@ -260,9 +260,9 @@
               <div class="hit"></div>
                 <img src="img/strawberry.jpg" width="267" height="267" alt="Клубничное мороженное">
               <div class="price-hit">
-                <p>355₽<span>/кг</span></p>
+                <p>355 ₽<span>/кг</span></p>
               </div>
-              <p class="product-text">Сливочно-клубничное <br>с присыпкой из белого шоколада</p>
+              <p class="product-text">Сливочно-клубничное с <br>присыпкой из белого шоколада</p>
               <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
             </div>
           </li>
@@ -271,7 +271,7 @@
               <div class="hit"></div>
               <img src="img/caramel.jpg" width="267" height="267" alt="Карамельное мороженное">
               <div class="price-hit">
-                <p>415₽<span>/кг</span></p>
+                <p>415 ₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочное крем-брюле <br>с карамельной подливкой </p>
               <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
@@ -281,8 +281,8 @@
             <div class="product-item__body">
               <div class="hit"></div>
               <img src="img/cowberry.jpg" width="267" height="267" alt="Брусничное мороженное">
-              <div class="price-hit">
-                <p>325₽<span>/кг</span></p>
+              <div class="price-hit first-price">
+                <p>325 ₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочное с брусничным <br>джемом</p>
               <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
@@ -293,7 +293,7 @@
               <div class="hit"></div>
               <img src="img/bilberry.jpg" width="267" height="267" alt="Черничное мороженное">
               <div class="price-hit">
-                <p>410₽<span>/кг</span></p>
+                <p>410 ₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочно-черничное с цельными <br> ягодами черники </p>
               <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
@@ -304,7 +304,7 @@
               <div class="hit"></div>
               <img src="img/lemoncaramel.jpg" width="267" height="267" alt="Лимонное мороженное">
               <div class="price-hit">
-                <p>315₽<span>/кг</span></p>
+                <p>315 ₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочно-лимонное с<br>карамельной присыпкой</p>
               <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
@@ -315,7 +315,7 @@
               <div class="hit"></div>
               <img src="img/cchipshoko.jpg" width="267" height="267" alt="Мороженное с шоколадной стружкой">
               <div class="price-hit">
-                <p>320₽<span>/кг</span></p>
+                <p>320 ₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочное с шоколадной <br>стружкой</p>
               <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
@@ -325,8 +325,8 @@
             <div class="product-item__body">
               <div class="hit"></div>
               <img src="img/vanilshoko.jpg" width="267" height="267" alt="Ванильное мороженное">
-              <div class="price-hit">
-                <p>430₽<span>/кг</span></p>
+              <div class="price-hit first-price">
+                <p>440 ₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочно-ванильное <br>с кусочками шоколада</p>
               <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
@@ -337,7 +337,7 @@
               <div class="hit"></div>
               <img src="img/menthol.jpg" width="267" height="267" alt="Ментоловое мороженное">
               <div class="price-hit">
-                <p>435₽<span>/кг</span></p>
+                <p>435 ₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочноe с ментоловым <br>сиропом</p>
               <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
@@ -348,7 +348,7 @@
               <div class="hit"></div>
               <img src="img/shokopiecec.jpg" width="267" height="267" alt="Мороженное с чёрным шоколадом">
               <div class="price-hit">
-                <p>355₽<span>/кг</span></p>
+                <p>355 ₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочное с кусочками черного <br>шоколада</p>
               <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
@@ -358,8 +358,8 @@
             <div class="product-item__body">
               <div class="hit"></div>
               <img src="img/minticecream.jpg" width="267" height="267" alt="Мятное мороженное">
-              <div class="price-hit">
-                <p>420₽<span>/кг</span></p>
+              <div class="price-hit price">
+                <p>420 ₽<span>/кг</span></p>
               </div>
               <p class="product-text">Сливочное с мятным сиропом</p>
               <a class="btn hidden btn-card" aria-label="Просмотр товара.">Быстрый просмотр</a>
