@@ -627,14 +627,14 @@
   position: absolute;
   font-size: 45px;
   line-height: 45px;
-  margin-top: 153px;
+  margin-top: 149px;
   margin-bottom: 25px;
   align-self: flex-start;
   text-shadow: 0px 1px 3px var(--price-shadow);
 }
 
 .price {
-  margin-top: 180px;
+  margin-top: 153px;
 }
 
 .price-hit p {
@@ -703,7 +703,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 13px;
-  margin-top: 13px;
+  margin-top: 11px;
   text-decoration: underline;
   text-decoration-color: var(--referense-background);
   text-underline-position: under;
@@ -743,12 +743,12 @@
   background-repeat: repeat;
   border-radius: 16px;
   color: var(--basic-black);
-  margin-top: 12px;
+  margin-top: 14px;
   margin-bottom: 40px;
   width: 1146px;
   box-sizing: border-box;
   position: relative;
-  padding: 23px 23px 29px 20px;
+  padding: 24px 23px 29px 20px;
 }
 
 .advantages-caption {
@@ -1545,6 +1545,7 @@ input:disabled + label {
   padding: 6px 26px;
   align-self: flex-end;
   margin-left: 16px;
+  margin-bottom: 3px;
 }
 .filter-button:hover {
   color:var(--basic-black);
@@ -1560,8 +1561,8 @@ input:disabled + label {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  margin-top: 38px;
-  margin-bottom: 29px;
+  margin-top: 36px;
+  margin-bottom: 31px;
 }
 
 .pagination-list {
@@ -1662,6 +1663,11 @@ input:disabled + label {
 
 .cart-product-text__2 {
   padding-top: 11px;
+}
+
+.product-text__hit {
+  margin-bottom: 11px;
+  margin-top: 13px;
 }
 
 .cart-product-image {
@@ -2040,3 +2046,5 @@ input:disabled + label {
     transform: translateX(10px);
   }
 }
+
+
