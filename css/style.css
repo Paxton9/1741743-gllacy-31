@@ -93,6 +93,8 @@
   width: 1146px;
   margin: 0 auto;
   padding: 0 20px;
+  position: absolute;
+  z-index: 3;
 }
 
 .slider__body {
@@ -973,6 +975,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 7px;
+}
+
+.maps-image {
+  position: absolute;
+  z-index: 1;
 }
 
 .pin {
